@@ -1,6 +1,6 @@
 ### Find & Select Multiple Occurrences
 
-**<font face="Open Sans" color=gray size=4>Select multiple occurrences of the same word and change them all at once</font>**
+**<font color=gray size=4>Select multiple occurrences of the same word and change them all at once</font>**
 
 | For               | macOs       | Windows / Linux          |
 | ----------------- | ----------- | ------------------------ |
