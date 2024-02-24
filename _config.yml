@@ -22,7 +22,7 @@ title: bayanbulak blog
 email: devbayanbulak@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   For developping journey
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bayanlulak.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fake
 github_username:  bayanbulak
