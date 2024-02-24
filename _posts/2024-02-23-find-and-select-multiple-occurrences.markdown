@@ -4,7 +4,7 @@ title:  "Find & Select Multiple Occurrences in IntellJ IDEA"
 date:   2024-02-23 13:50:58 +0800
 categories: jekyll update
 ---
-<font color=gray size=6>Select multiple occurrences of the same word and change them all at once</font>
+<font color=gray size=5>Select multiple occurrences of the same word and change them all at once</font>
 
 |For|macOs|Windows / Linux|
 |-|-|-|
