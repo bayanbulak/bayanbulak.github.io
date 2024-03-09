@@ -1,4 +1,123 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-24T14:22:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">bayanbulak blog</title><subtitle>For developping journey</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/02/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-02-24T13:50:58+08:00</published><updated>2024-02-24T13:50:58+08:00</updated><id>http://localhost:4000/jekyll/update/2024/02/24/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/02/24/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-09T16:50:09+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">bayan blog</title><subtitle>Developping journey</subtitle><entry><title type="html">Operator Precedence in Java</title><link href="http://localhost:4000/jekyll/update/2024/03/09/operator-precedence-in-java.html" rel="alternate" type="text/html" title="Operator Precedence in Java" /><published>2024-03-09T15:45:58+08:00</published><updated>2024-03-09T15:45:58+08:00</updated><id>http://localhost:4000/jekyll/update/2024/03/09/operator-precedence-in-java</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/03/09/operator-precedence-in-java.html"><![CDATA[<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Operator</th>
+      <th>Description</th>
+      <th>Associativity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>16</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">()</code> <code class="language-plaintext highlighter-rouge">[]</code> <code class="language-plaintext highlighter-rouge">.</code></td>
+      <td>parentheses array access member access</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>15</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">++</code> <code class="language-plaintext highlighter-rouge">--</code></td>
+      <td>unary post-increment unary post-decrement</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>14</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code> <code class="language-plaintext highlighter-rouge">-</code> <code class="language-plaintext highlighter-rouge">!</code> <code class="language-plaintext highlighter-rouge">~</code> <code class="language-plaintext highlighter-rouge">++</code> <code class="language-plaintext highlighter-rouge">--</code></td>
+      <td>unary plus unary minus unary logical NOT unary bitwise NOT unary pre-increment unary pre-decrement</td>
+      <td>right-to-left</td>
+    </tr>
+    <tr>
+      <td><strong>13</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">()</code> <code class="language-plaintext highlighter-rouge">new</code></td>
+      <td>cast object creation</td>
+      <td>right-to-left</td>
+    </tr>
+    <tr>
+      <td><strong>12</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">*</code> <code class="language-plaintext highlighter-rouge">/</code> <code class="language-plaintext highlighter-rouge">%</code></td>
+      <td>multiplicative</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>11</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">+ -</code> <code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>additive string concatenation</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>10</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt; &gt;&gt;</code> <code class="language-plaintext highlighter-rouge">&gt;&gt;&gt;</code></td>
+      <td>shift</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>9</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">&lt; &lt;=</code> <code class="language-plaintext highlighter-rouge">&gt; &gt;=</code> <code class="language-plaintext highlighter-rouge">instanceof</code></td>
+      <td>relational</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>8</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">==</code> <code class="language-plaintext highlighter-rouge">!=</code></td>
+      <td>equality</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>7</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">&amp;</code></td>
+      <td>bitwise AND</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>6</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">^</code></td>
+      <td>bitwise XOR</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">|</code></td>
+      <td>bitwise OR</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">&amp;&amp;</code></td>
+      <td>logical AND</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">||</code></td>
+      <td>logical OR</td>
+      <td>left-to-right</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">?:</code></td>
+      <td>ternary</td>
+      <td>right-to-left</td>
+    </tr>
+    <tr>
+      <td><strong>1</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">=</code> <code class="language-plaintext highlighter-rouge">+=</code> <code class="language-plaintext highlighter-rouge">-=</code> <code class="language-plaintext highlighter-rouge">*=</code> <code class="language-plaintext highlighter-rouge">/=</code> <code class="language-plaintext highlighter-rouge">%=</code> <code class="language-plaintext highlighter-rouge">&amp;=</code> <code class="language-plaintext highlighter-rouge">^=</code> <code class="language-plaintext highlighter-rouge">|=</code> <code class="language-plaintext highlighter-rouge">&lt;&lt;=</code> <code class="language-plaintext highlighter-rouge">&gt;&gt;=</code> <code class="language-plaintext highlighter-rouge">&gt;&gt;&gt;=</code></td>
+      <td>assignment</td>
+      <td>right-to-left</td>
+    </tr>
+    <tr>
+      <td><strong>0</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">-&gt;</code></td>
+      <td>lambda expression arrow</td>
+      <td>right-to-left</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="see-also">See Also</h3>
+
+<ul>
+  <li><a href="https://introcs.cs.princeton.edu/java/11precedence/">Operator Precedence in Java, princeton</a></li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Level Operator Description Associativity 16 () [] . parentheses array access member access left-to-right 15 ++ -- unary post-increment unary post-decrement left-to-right 14 + - ! ~ ++ -- unary plus unary minus unary logical NOT unary bitwise NOT unary pre-increment unary pre-decrement right-to-left 13 () new cast object creation right-to-left 12 * / % multiplicative left-to-right 11 + - + additive string concatenation left-to-right 10 &lt;&lt; &gt;&gt; &gt;&gt;&gt; shift left-to-right 9 &lt; &lt;= &gt; &gt;= instanceof relational left-to-right 8 == != equality left-to-right 7 &amp; bitwise AND left-to-right 6 ^ bitwise XOR left-to-right 5 | bitwise OR left-to-right 4 &amp;&amp; logical AND left-to-right 3 || logical OR left-to-right 2 ?: ternary right-to-left 1 = += -= *= /= %= &amp;= ^= |= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;= assignment right-to-left 0 -&gt; lambda expression arrow right-to-left]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/02/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-02-24T13:50:58+08:00</published><updated>2024-02-24T13:50:58+08:00</updated><id>http://localhost:4000/jekyll/update/2024/02/24/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/02/24/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -14,7 +133,7 @@
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Find &amp;amp; Select Multiple Occurrences in IntellJ IDEA</title><link href="http://localhost:4000/jekyll/update/2024/02/23/find-and-select-multiple-occurrences.html" rel="alternate" type="text/html" title="Find &amp;amp; Select Multiple Occurrences in IntellJ IDEA" /><published>2024-02-23T13:50:58+08:00</published><updated>2024-02-23T13:50:58+08:00</updated><id>http://localhost:4000/jekyll/update/2024/02/23/find-and-select-multiple-occurrences</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/02/23/find-and-select-multiple-occurrences.html"><![CDATA[<font color="gray" size="6">Select multiple occurrences of the same word and change them all at once</font>
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Find &amp;amp; Select Multiple Occurrences in IntellJ IDEA</title><link href="http://localhost:4000/jekyll/update/2024/02/23/find-and-select-multiple-occurrences.html" rel="alternate" type="text/html" title="Find &amp;amp; Select Multiple Occurrences in IntellJ IDEA" /><published>2024-02-23T13:50:58+08:00</published><updated>2024-02-23T13:50:58+08:00</updated><id>http://localhost:4000/jekyll/update/2024/02/23/find-and-select-multiple-occurrences</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/02/23/find-and-select-multiple-occurrences.html"><![CDATA[<font color="gray" size="5">Select multiple occurrences of the same word and change them all at once</font>
 
 <table>
   <thead>

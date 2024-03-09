@@ -1,18 +1,29 @@
 ---
 layout: post
-title:  "Find & Select Multiple Occurrences in IntellJ IDEA"
-date:   2024-02-23 13:50:58 +0800
+title:  "Operator Precedence in Java"
+date:   2024-03-09 15:45:58 +0800
 categories: jekyll update
 ---
-<font color=gray size=5>Select multiple occurrences of the same word and change them all at once</font>
-
-|For|macOs|Windows / Linux|
-|-|-|-|
-|Select one by one|`⌃` `G`| `Alt`  `J`|
-|Select all|`⌘` `⌃` `G`|`Ctrl` `Alt` `Shift` `J`|
+| Level  | Operator                                               | Description                                                  | Associativity |
+| ------ | ------------------------------------------------------ | ------------------------------------------------------------ | ------------- |
+| **16** | `()` `[]` `.`                                          | parentheses array access member access                       | left-to-right |
+| **15** | `++` `--`                                              | unary post-increment unary post-decrement                    | left-to-right |
+| **14** | `+` `-` `!` `~` `++` `--`                              | unary plus unary minus unary logical NOT unary bitwise NOT unary pre-increment unary pre-decrement | right-to-left |
+| **13** | `()` `new`                                             | cast object creation                                         | right-to-left |
+| **12** | `*` `/` `%`                                                | multiplicative                                               | left-to-right |
+| **11** | `+ -` `+`                                              | additive string concatenation                                | left-to-right |
+| **10** | `<< >>` `>>>`                                          | shift                                                        | left-to-right |
+| **9**  | `< <=` `> >=` `instanceof`                             | relational                                                   | left-to-right |
+| **8**  | `==` `!=`                                              | equality                                                     | left-to-right |
+| **7**  | `&`                                                    | bitwise AND                                                  | left-to-right |
+| **6**  | `^`                                                    | bitwise XOR                                                  | left-to-right |
+| **5**  | `|`                                                    | bitwise OR                                                   | left-to-right |
+| **4**  | `&&`                                                   | logical AND                                                  | left-to-right |
+| **3**  | `||`                                                   | logical OR                                                   | left-to-right |
+| **2**  | `?:`                                                   | ternary                                                      | right-to-left |
+| **1**  |`=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `|=` `<<=` `>>=` `>>>=` | assignment                                                   | right-to-left |
+| **0**  | `->`                                                   | lambda expression arrow                                      | right-to-left |
 
 ### See Also
 
-* [(documentation) IntelliJ IDEA Help - Multiple cursors and selection ranges](https://www.jetbrains.com/help/idea/multicursor.html?#multiple_words)
-
-* [Find & Select Multiple Occurrences](https://www.jetbrains.com/guide/java/tips/find-select-multiple-occurrences/#:~:text=You%20can%20use%20⌘⌃,from%20the%20last%20selected%20occurrence.)
+* [Operator Precedence in Java, princeton](https://introcs.cs.princeton.edu/java/11precedence/)
